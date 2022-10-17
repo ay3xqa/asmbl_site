@@ -1,3 +1,8 @@
+.Hero
+{
+    background-color: #B1D6FD;
+}
+
 .Hero-container
 {
     display: flex;
@@ -5,17 +10,24 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 71.35rem;
+    width: 80%;
 }
 
 .Hero-title
 {
     text-align: center;
+    font-size: 100px;
+    padding-bottom: 12px;
+    padding-top: 58px;
+    margin: 0;
 }
 
 .Hero-description
 {
     text-align: center;
+    font-size: 48px;
+    width: 60%;
+    margin: auto;
 }
 
 .Hero-formContainer
@@ -27,12 +39,16 @@
 
 #name
 {
-    width: 50%;
+    width: 30%;
+    padding: 12px;
+    background-color: #EFFEFB;
 }
 
 #email
 {
-    width: 50%;
+    width: 30%;
+    padding: 12px;
+    background-color: #EFFEFB;
 }
 
 @media screen and (max-width: 768px) 
