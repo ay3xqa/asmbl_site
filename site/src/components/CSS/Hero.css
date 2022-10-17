@@ -1,0 +1,49 @@
+.Hero-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 71.35rem;
+}
+
+.Hero-title
+{
+    text-align: center;
+}
+
+.Hero-description
+{
+    text-align: center;
+}
+
+.Hero-formContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name
+{
+    width: 50%;
+}
+
+#email
+{
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) 
+{
+    .Hero-container
+    {
+        width: inherit;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
