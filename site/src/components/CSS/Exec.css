@@ -1,0 +1,79 @@
+.Exec
+{
+    background-color: #EFFEFB;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.Exec-container
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 70%;
+}
+
+.Exec-board
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.Exec-member
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.Exec-title
+{
+    font-size: 17px;
+    margin: 0;
+    text-align: center;
+}
+
+.Exec-name
+{
+    font-size: 17px;
+    margin: 0;
+    text-align: center;
+}
+
+.Exec-headshot
+{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) 
+{
+    .Exec-container
+    {
+        width: inherit;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .Exec-board
+    {
+        flex-direction: column;
+    }
+
+    .Exec-headshotWrapper
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Exec-member
+    {
+        padding-bottom: 16px;
+    }
+}

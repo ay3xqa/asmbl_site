@@ -1,0 +1,97 @@
+.Works
+{
+    background-color: #EFFEFB;
+    position: relative;
+}
+
+.Works-container
+{
+    padding-top: 128px;
+    padding-bottom: 256px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.Works-contentWrapper
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.Works-title
+{
+    font-size: 48px;
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.Works-description
+{
+    font-size: 17px;
+    margin: 0;
+}
+
+.Works-imageWrapper
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.Works-image
+{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    object-fit: cover;
+}
+
+.custom-shape-divider-bottom-1666050241 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1666050241 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1666050241 .shape-fill {
+    fill: #FFF;
+}
+
+@media (max-width: 768px) 
+{
+    .Works-container
+    {
+        flex-direction: column;
+        width: inherit;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .Works-imageWrapper
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .Works-contentWrapper
+    {
+        width: 100%;
+    }
+}
