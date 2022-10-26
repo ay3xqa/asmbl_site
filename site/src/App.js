@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Works from './components/Works';
 import Core from './components/Core';
 import Exec from './components/Exec'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Works/>
       <Core/>
       <Exec/>
+      <Footer/>
     </>
   );
 }

@@ -2,11 +2,45 @@
 {
     background-color: #FFF;
     position: relative;
+    padding-top: 128px;
+    padding-bottom: 128px;
 }
 
 .Core-container
 {
-    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 32px;
+    width: 70%;
+}
+
+.Core-contentWrapper
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.Core-header
+{
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+    color: #4FD4FF;
+}
+
+.Core-description
+{
+    font-size: 17px;
+    text-align: center;
+}
+
+.Core-imageWrapper
+{
+    display: flex;
+    justify-content: center;
 }
 
 .custom-shape-divider-bottom-1666050734 {
@@ -26,6 +60,20 @@
 }
 
 .custom-shape-divider-bottom-1666050734 .shape-fill {
-    fill: #EFFEFB;
+    fill: #cafff4;
 }
 
+@media (max-width: 768px) 
+{
+    .Core-container
+    {
+        width: inherit;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

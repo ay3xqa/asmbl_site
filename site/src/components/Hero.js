@@ -7,7 +7,7 @@ export default function Hero() {
         <section className='Hero'>
             <div className='Hero-container l-container'>
                 <h1 className='Hero-title'>ASMBL</h1>
-                <h3 className='Hero-description'>Some text that will be the open for the website</h3>
+                <h3 className='Hero-description'>Reimagining the PC Building Experience</h3>
                 <img className='Hero-image' src={image} alt="" />
                 <div className='Hero-formContainer'>
                     <input id='name' type='text' placeholder='Name' />

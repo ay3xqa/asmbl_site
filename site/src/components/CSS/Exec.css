@@ -1,24 +1,33 @@
 .Exec
 {
-    background-color: #EFFEFB;
-    padding-top: 128px;
+    background-color: #cafff4;
+    padding-top: 64px;
     padding-bottom: 128px;
 }
 
 .Exec-container
 {
     display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     width: 70%;
 }
 
+.Exec-header
+{
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 16px;
+}
+
 .Exec-board
 {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    gap: 48px;
+    justify-content: center;
 }
 
 .Exec-member

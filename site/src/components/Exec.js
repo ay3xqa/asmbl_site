@@ -9,6 +9,7 @@ export default function Exec() {
     return (
         <section className='Exec'>
             <div className='Exec-container'>
+                <h3 className='Exec-header'>Meet the Team </h3>
                 <div className='Exec-board'>
                     {/* Abhinav */}
                     <div className='Exec-member'>

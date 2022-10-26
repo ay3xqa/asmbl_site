@@ -1,0 +1,53 @@
+.Footer
+{
+    background-color: #B1D6FD;
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.Footer-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.Footer-button
+{
+    width: 300px;
+    padding: 16px;
+    border-radius: 21px;
+    text-align: center;
+    background-color: #4FD4FF;
+    font-size: 20px;
+    margin-bottom: 32px;
+    box-shadow: #4FD4F0 0px 0px 25px 0px;
+}
+.Footer-button:hover
+{
+    background-color: #EFFEFB;
+}
+.react-icon
+{
+    color:#4FD4FF;
+}
+.react-icon:hover
+{
+color:#EFFEFB;
+transition: ease 150ms;
+}
+.iconList
+{
+list-style-type: none;
+display: flex;
+justify-content: space-evenly;
+padding: 0;
+}
+
+.iconList >li:hover
+{
+color: lawngreen;
+}
