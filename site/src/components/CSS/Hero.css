@@ -1,16 +1,32 @@
 .Hero
 {
     background-color: #B1D6FD;
+    position: relative;
+    display: flex;
 }
 
 .Hero-container
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 70%;
+}
+
+.Hero::after
+{
+    border-radius: 100% / 50%;
+}
+
+.Hero-image
+{
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    width: auto\9;
+    border-radius: 10px;
 }
 
 .Hero-title
@@ -27,6 +43,7 @@
     text-align: center;
     font-size: 48px;
     width: 60%;
+    padding-bottom: 32px;
     margin: auto;
 }
 
@@ -35,21 +52,66 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 32px;
+    width: 100%;
 }
 
 #name
 {
-    width: 30%;
-    padding: 12px;
+    width: 300px;
+    padding: 8px;
+    border-radius: 21px;
+    margin-bottom: 24px;
     background-color: #EFFEFB;
 }
 
 #email
 {
-    width: 30%;
-    padding: 12px;
+    width: 300px;
+    padding: 8px;
+    border-radius: 21px;
+    margin-bottom: 32px;
     background-color: #EFFEFB;
 }
+
+.Hero-button
+{
+    width: 300px;
+    padding: 16px;
+    border-radius: 21px;
+    text-align: center;
+    background-color: #4FD4FF;
+    font-size: 20px;
+    margin-bottom: 200px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;} */
+    box-shadow: #4FD4F0 0px 0px 25px 0px;
+}
+.Hero-button:hover
+{
+    background-color: #EFFEFB;
+}
+
+.custom-shape-divider-bottom-1666046036 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1666046036 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 165px;
+}
+
+.custom-shape-divider-bottom-1666046036 .shape-fill {
+    fill: #cafff4;
+}
+
 
 @media screen and (max-width: 768px) 
 {
