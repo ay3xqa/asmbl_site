@@ -1,6 +1,5 @@
 import React from 'react';
 import './CSS/Footer.css';
-import {IconContext} from 'react-icons';
 import {FaGithub, FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa' 
 
 export default function Footer() {
