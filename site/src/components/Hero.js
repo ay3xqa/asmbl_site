@@ -12,7 +12,9 @@ export default function Hero() {
                 <div className='Hero-formContainer'>
                     <input id='name' type='text' placeholder='Name' />
                     <input id='email' type='text' placeholder='Email' />
-                    <div className='Hero-button'>Join Waitlist</div>
+                    <a className='Hero-button' href='https://tinyurl.com/ASMBL-Waitlist' target='_blank' rel="noreferrer">
+                        Join Waitlist
+                    </a>
                 </div> 
             </div>
             <div className="custom-shape-divider-bottom-1666046036">

@@ -7,7 +7,7 @@ export default function Footer() {
         <section className='Footer'>
             <div>
                 <div className='Footer-button'>Contact Us</div>
-                <div className='Footer-icons'>
+                {/* <div className='Footer-icons'>
                 <ul className='iconList'>
                     <li>
                     <a className='git' href = "https://github.com/ay3xqa" target="_blank" rel="noreferrer">
@@ -30,7 +30,7 @@ export default function Footer() {
                     </a>
                     </li>
                 </ul>
-                </div>
+                </div> */}
             </div>
         </section>
     )
