@@ -25,6 +25,8 @@
     font-size: 20px;
     margin-bottom: 32px;
     box-shadow: #4FD4F0 0px 0px 25px 0px;
+    text-decoration: none;
+    color: black;
 }
 .Footer-button:hover
 {

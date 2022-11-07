@@ -41,7 +41,7 @@
 .Hero-description
 {
     text-align: center;
-    font-size: 48px;
+    font-size: 42px;
     width: 60%;
     padding-bottom: 32px;
     margin: auto;
@@ -119,11 +119,15 @@
 {
     .Hero-container
     {
-        width: inherit;
         margin-right: auto;
         margin-left: auto;
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .Hero-description
+    {
+        font-size: 28px;
     }
 }
 
