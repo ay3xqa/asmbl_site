@@ -1,23 +1,24 @@
 import React from 'react';
 import './CSS/Works.css';
 import image from '../gpu.png';
+import './JS/Animations.js'
 
 export default function Works() {
+    const ref = useRef();
+    const isVisible = useOnScreen(ref);
+
     return (
         <section className='Works'>
-            <div className='Works-container'>
+            <div className='Works-container star'>
+            <div ref={ref}>{isVisible && `Yep, I'm on screen`}</div>
                 <div className='Works-contentWrapper'>
                     <h3 className='Works-title'>How It Works</h3>
-                    <p className='Works-description'>
-                    Three dimensions we have outlined in class that relate to our team’s effectiveness include: performance, improvement, and satisfaction. Upon completion of our strategy and systems class and our first Evergrain deliverable, we are proud of the work we have put forth, but we also know that there are ways to improve our team effectiveness. 
-                        <br></br>
-                        <br></br>
-                        With regards to performance, we would say that we are doing well but have room for improvement. In our last Strategy and System’s case, we received a “B” and we were immediately disappointed.
-                        <br>
-                        </br>
-                        <br></br>
-                        However, there were two choices that we could have made at that moment: learn from our failure and figure out ways to improve or sulk and not grow from our mistakes. We chose the route to grow and improve from our mistakes.
-                    </p>
+                    <div className='Works-description'>
+                    <p>Custom PC Building experience with a compatibility checker, filterable component categories, and 3D visualization of your build in real-time</p>
+                    <p>Continuosly updating product library with component specification comparer</p>
+                    <p>Community of PC Enthusiasts and Builders</p>
+                    <p>Original and Aggregated Build Guides with PC Building Best Practices and sample builds</p>
+                    </div>
                 </div>
                 <div className='Works-imageWrapper'>
                     <img className='Works-image' alt='' src={image} />
