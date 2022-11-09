@@ -1,6 +1,7 @@
 .Footer
 {
     background-color: #B1D6FD;
+    background: linear-gradient(to right,#B1D6FD, #448fe6, #1779e2);
     display: flex;
     justify-content: center;
     padding-top: 64px;

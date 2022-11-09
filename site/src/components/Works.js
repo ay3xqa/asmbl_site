@@ -1,16 +1,12 @@
 import React from 'react';
 import './CSS/Works.css';
 import image from '../gpu.png';
-import './JS/Animations.js'
 
 export default function Works() {
-    const ref = useRef();
-    const isVisible = useOnScreen(ref);
 
     return (
         <section className='Works'>
             <div className='Works-container star'>
-            <div ref={ref}>{isVisible && `Yep, I'm on screen`}</div>
                 <div className='Works-contentWrapper'>
                     <h3 className='Works-title'>How It Works</h3>
                     <div className='Works-description'>
