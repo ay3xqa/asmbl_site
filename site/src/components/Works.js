@@ -1,12 +1,34 @@
 import React from 'react';
 import './CSS/Works.css';
 import image from '../gpu.png';
+import './CSS/Design.css';
 
-export default function Works() {
+export default function Works(){
+    const domRef = React.useRef();
+  
+    const [isVisible, setVisible] = React.useState(false);
+  
+    React.useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        // In your case there's only one element to observe:     
+        if (entries[0].isIntersecting) {
+        
+          // Not possible to set it back to false like this:
+          setVisible(true);
+          
+          // No need to keep observing:
+          observer.unobserve(domRef.current);
+        }
+      });
+      
+      observer.observe(domRef.current);
+      
+      return () => observer.disconnect();
+    }, []);
 
     return (
         <section className='Works'>
-            <div className='Works-container star'>
+            <div ref={ domRef } className={ `Works-container fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
                 <div className='Works-contentWrapper'>
                     <h3 className='Works-title'>How It Works</h3>
                     <div className='Works-description'>
