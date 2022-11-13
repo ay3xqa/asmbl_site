@@ -2,11 +2,34 @@ import React from 'react';
 import './CSS/Core.css';
 import GPU from '../gpuSmall.png';
 import CPU from '../cpuSmall.png';
+import './CSS/Design.css';
 
-export default function Core() {
+export default function Core(){
+    const domRef = React.useRef();
+  
+    const [isVisible, setVisible] = React.useState(false);
+  
+    React.useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        // In your case there's only one element to observe:     
+        if (entries[0].isIntersecting) {
+        
+          // Not possible to set it back to false like this:
+          setVisible(true);
+          
+          // No need to keep observing:
+          observer.unobserve(domRef.current);
+        }
+      });
+      
+      observer.observe(domRef.current);
+      
+      return () => observer.disconnect();
+    }, []);
+
     return (
         <section className='Core'>
-            <div className='Core-container'>
+            <div ref={ domRef } className={ `Core-container fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
                 <div className='Core-contentWrapper'>
                     <h3 className='Core-header Core-header1'>What makes us different?</h3>
                     <p className='Core-description'>

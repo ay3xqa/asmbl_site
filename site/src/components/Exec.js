@@ -1,14 +1,37 @@
 import React from 'react';
 import './CSS/Exec.css';
-import Alex from '../Alex.png'
-import Lucas from '../Lucas.png'
-import Abhinav from '../Abhinav.png'
-import Bhargav from '../Bhargav.png'
+import Alex from '../Alex.png';
+import Lucas from '../Lucas.png';
+import Abhinav from '../Abhinav.png';
+import Bhargav from '../Bhargav.png';
+import './CSS/Design.css';
 
-export default function Exec() {
+export default function Core(){
+    const domRef = React.useRef();
+  
+    const [isVisible, setVisible] = React.useState(false);
+  
+    React.useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        // In your case there's only one element to observe:     
+        if (entries[0].isIntersecting) {
+        
+          // Not possible to set it back to false like this:
+          setVisible(true);
+          
+          // No need to keep observing:
+          observer.unobserve(domRef.current);
+        }
+      });
+      
+      observer.observe(domRef.current);
+      
+      return () => observer.disconnect();
+    }, []);
+
     return (
         <section className='Exec'>
-            <div className='Exec-container'>
+            <div ref={ domRef } className={ `Exec-container fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
                 <h3 className='Exec-header'>Meet the Team </h3>
                 <div className='Exec-board'>
                     {/* Abhinav */}
