@@ -1,13 +1,15 @@
 import React from 'react';
 import './CSS/Hero.css';
 import image from '../heroImage.png'
+import './CSS/Design.css'
 
 export default function Hero() {
     return (
         <section className='Hero'>
             <div className='Hero-container l-container'>
                 <h1 className='Hero-title'>ASMBL</h1>
-                <h3 className='Hero-description'>Reimagining the PC Building Experience</h3>
+                <h3 className='Hero-description line-1 anim-typewriter'>Reimagining the PC Building</h3>
+                <h3 className='Hero-description line-1 anim-typewriter2'>Experience and Community</h3>
                 <img className='Hero-image' src={image} alt="" />
                 <div className='Hero-formContainer'>
                     <input id='name' type='text' placeholder='Name' />

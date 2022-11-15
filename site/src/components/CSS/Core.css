@@ -13,14 +13,15 @@
     margin-left: auto;
     margin-right: auto;
     gap: 32px;
-    width: 70%;
+    width: 60%;
 }
 
 .Core-contentWrapper
 {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
+    justify-content: space-around;
 }
 
 .Core-header
@@ -33,8 +34,7 @@
 
 .Core-description
 {
-    font-size: 17px;
-    text-align: center;
+    font-size: 18px;
 }
 
 .Core-imageWrapper

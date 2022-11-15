@@ -12,7 +12,7 @@
     align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
     justify-content: flex-end;
 }
 
@@ -28,11 +28,23 @@
     font-size: 48px;
     margin: 0;
     padding-bottom: 16px;
+    padding-top: 8px;
+}
+
+.Works-title::before
+{
+    content: "";
+    height: 4px;
+    width: 156px;
+    margin-bottom: 8px;
+    background-color: #4FD4FF;
+    position: absolute;
+    top: 128px;
 }
 
 .Works-description
 {
-    font-size: 17px;
+    font-size: 24px;
     margin: 0;
 }
 
@@ -49,6 +61,21 @@
     height: auto;
     width: auto\9;
     object-fit: cover;
+}
+
+.star {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+}
+
+@keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
 }
 
 .custom-shape-divider-bottom-1666050241 {

@@ -5,8 +5,9 @@ import './CSS/Footer.css';
 export default function Footer() {
     return (
         <section className='Footer'>
-            <div>
-                <div className='Footer-button'>Contact Us</div>
+                <a className='Footer-button' href='mailto:ay3xqa@virginia.edu?subject=Inquiring About ASMBL'>
+                    Contact Us
+                </a>
                 {/* <div className='Footer-icons'>
                 <ul className='iconList'>
                     <li>
@@ -31,7 +32,6 @@ export default function Footer() {
                     </li>
                 </ul>
                 </div> */}
-            </div>
         </section>
     )
 }

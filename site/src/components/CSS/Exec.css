@@ -20,6 +20,19 @@
     text-align: center;
     font-size: 32px;
     padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Exec-header::before
+{
+    content: "";
+    height: 4px;
+    width: 156px;
+    margin-bottom: 8px;
+    background-color: #4FD4FF;
+    position: relative;
+    left: calc(50% - 78px);
 }
 
 .Exec-board
