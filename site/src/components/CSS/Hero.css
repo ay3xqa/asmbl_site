@@ -1,7 +1,7 @@
 .Hero
 {
-    background-color: #B1D6FD;
-    background: linear-gradient(to right,#B1D6FD, #448fe6, #1779e2);
+    background-color: #182138;
+    /* background: linear-gradient(to right,#B1D6FD, #448fe6, #1779e2); */
     position: relative;
     display: flex;
 }
@@ -30,6 +30,11 @@
     border-radius: 10px;
 }
 
+.Hero-logo
+{
+    height: 200px;
+}
+
 .Hero-title
 {
     text-align: center;
@@ -45,6 +50,7 @@
     font-size: 42px;
     width: 60%;
     padding-bottom: 32px;
+    color: white;
     margin: auto;
 }
 
@@ -55,6 +61,19 @@
     align-items: center;
     padding-top: 32px;
     width: 100%;
+}
+
+.Hero-sketchContainer
+{
+    height: 50vh;
+    width: inherit;
+    margin-bottom: 32px;
+}
+
+#heroModel
+{
+    height: 50vh;
+    border: none;
 }
 
 #name
