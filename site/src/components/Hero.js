@@ -1,6 +1,5 @@
 import React from 'react';
 import './CSS/Hero.css';
-import image from '../heroImage.png';
 import './CSS/Design.css';
 import logo from '../logo_transparent.png';
 
