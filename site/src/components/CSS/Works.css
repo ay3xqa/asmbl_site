@@ -55,6 +55,13 @@
     width: 50%;
 }
 
+#worksModel
+{
+    max-width: 100%;
+    height: 50vh;
+    border: none;
+}
+
 .Works-image
 {
     max-width: 100%;

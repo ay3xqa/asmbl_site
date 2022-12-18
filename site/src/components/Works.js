@@ -40,6 +40,7 @@ export default function Works(){
                 </div>
                 <div className='Works-imageWrapper'>
                     <img className='Works-image' alt='' src={image} />
+                    {/* <iframe title="worksModel" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking transparent" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/42393304578e4f1ab0ea3c7338aeea88/embed?autostart=1&camera=0&transparent=1"> </iframe> */}
                 </div>
             </div>
             <div className="custom-shape-divider-bottom-1666050241">
