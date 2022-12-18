@@ -13,7 +13,7 @@ export default function Hero() {
                 <h3 className='Hero-description line-1 anim-typewriter2'>Experience and Community</h3>
                 {/* <img className='Hero-image' src={image} alt="" /> */}
                 <div className='Hero-sketchContainer'>
-                    <iframe id="heroModel" width="100%" scrolling="0" 
+                    <iframe title="Hero Model" id="heroModel" width="100%" scrolling="0" 
                     src="https://sketchfab.com/models/8d913bda48f84217902e6829982c494f/embed?ui_infos=0&amp;ui_watermark=0&amp;ui_help=0&amp;ui_settings=0&amp;ui_inspector=0&amp;ui_annotations=0&amp;ui_stop=0&amp;ui_vr=0&amp;preload=1&amp;autostart=1&amp;ui_hint=2&amp;autospin=0.2&amp;transparent=1">
 </iframe>
                 </div>
